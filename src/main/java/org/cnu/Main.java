@@ -9,11 +9,13 @@ public class Main {
 
         int param = sc.nextInt();
 
+        Calculable multiplyExpression = new multiExpression();
         Calculable additionExpression = new AdditionExpression();
         Calculable divisionExpression = new DivisionExpression();
 
         System.out.printf("my addition expression's result : %d \n", additionExpression.calculate(param));
         System.out.printf("my division expression's result : %d \n", divisionExpression.calculate(param));
+        System.out.printf("my multiplication expression's result : %d \n", multiplyExpression.calculate(param));
     }
 }
 
@@ -28,6 +30,12 @@ class AdditionExpression implements Calculable{
     }
 }
 
+class multiExpression implements Calculable{
+    @Override
+    public int calculate(int param) {
+        return param*100;
+    }
+}
 class DivisionExpression implements Calculable{
     @Override
     public int calculate(int param) {
