@@ -9,7 +9,7 @@ public class Main {
 
         int param = sc.nextInt();
 
-        Calculable expression = new OOOExpression();
+        Calculable expression = new multiExpression();
 
         System.out.printf("my expression's result : %d \n", expression.calculate(param));
     }
@@ -20,9 +20,9 @@ interface Calculable {
 }
 
 
-class OOOExpression implements Calculable{
+class multiExpression implements Calculable{
     @Override
     public int calculate(int param) {
-        return param;
+        return param*100;
     }
 }
