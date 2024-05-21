@@ -1,4 +1,5 @@
 
-n
-java:S3457"Q%n should be used in place of \n to produce the platform-specific line separator.(ßÃ â8íß×ù1
-G	java:S106"+Replace this use of System.out by a logger.(ßÃ â8îß×ù1
+	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Äµñœ8¤ªœ×ù1J$491a0759-f299-4ccf-a880-eab83f993282
+”
+java:S3457"Q%n should be used in place of \n to produce the platform-specific line separator.(ßÃ â8åŠ”×ù1J$31bbb11f-a6b4-42ca-959e-da0592e08b83
+m	java:S106"+Replace this use of System.out by a logger.(ßÃ â8æŠ”×ù1J$514ae5e4-4926-4427-8f69-8111fc78492f
