@@ -9,9 +9,11 @@ public class Main {
 
         int param = sc.nextInt();
 
-        Calculable expression = new OOOExpression();
+        Calculable additionExpression = new AdditionExpression();
+        Calculable divisionExpression = new DivisionExpression();
 
-        System.out.printf("my expression's result : %d \n", expression.calculate(param));
+        System.out.printf("my addition expression's result : %d \n", additionExpression.calculate(param));
+        System.out.printf("my division expression's result : %d \n", divisionExpression.calculate(param));
     }
 }
 
@@ -19,10 +21,16 @@ interface Calculable {
     int calculate(int param);
 }
 
-
-class OOOExpression implements Calculable{
+class AdditionExpression implements Calculable{
     @Override
     public int calculate(int param) {
-        return param;
+        return param + 21;
+    }
+}
+
+class DivisionExpression implements Calculable{
+    @Override
+    public int calculate(int param) {
+        return param / 2;
     }
 }
